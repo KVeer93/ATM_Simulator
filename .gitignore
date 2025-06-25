@@ -1,0 +1,20 @@
+# Ignore macOS file trash
+.DS_Store
+
+# Ignore compiled C++ binary
+atm_sim
+
+# Ignore object files
+*.o
+
+# Ignore build folders (if you use CMake or Make)
+build/
+cmake-build-*/
+
+# Ignore backup/temp files
+*.swp
+*.tmp
+*~
+
+# Ignore compiled debug files
+*.out
