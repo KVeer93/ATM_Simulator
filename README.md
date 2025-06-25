@@ -1,62 +1,97 @@
-# 🏦 ATM Simulator (CLI-based)
+# 🏦 ATM Simulator (CLI-Based)
 
-Welcome to the **ATM Simulator**, a command-line based banking system written in glorious C++.  
-Because real kings write their own ATMs 💻👑
+Welcome to the **ATM Simulator**, a command-line banking system crafted with elegant C++.
+Because real kings don't just withdraw money—they write the code that runs the ATM. 💻👑
 
-## 🚀 Features
+---
 
-- 💰 Withdraw and deposit cash
-- 👀 Check account balance
-- 🧾 View transaction history
-- 📁 Save & load user account data from files
-- 🔐 PIN verification
-- 🗃️ Transaction storage in separate `AccountHistory/` folder
+## ✨ Features
 
-## 🔧 Technologies
+* 💳 Secure PIN-based login
+* 💰 Withdraw and Deposit funds
+* 📈 Real-time Balance Checking
+* 🧾 Transaction History Tracker
+* 📁 File-based Data Persistence
+* 📓 Account data stored in a separate `AccountHistory/` folder
 
-- Language: C++
-- File Handling: `<fstream>`
-- CLI Input Handling
-- Organized using classes, headers, and utility files
+---
 
-## 🛠️ Build Instructions
+## 🧰 Tech Stack
+
+| Category       | Tech Used                 |
+| -------------- | ------------------------- |
+| Language       | C++                       |
+| Input Handling | `iostream`                |
+| File I/O       | `fstream`                 |
+| Build System   | CMake / g++               |
+| Structure      | Modular (Classes + Utils) |
+
+---
+
+## 🏗️ Build & Run Instructions
+
+### 🚀 Option 1: Using CMake (Recommended)
 
 ```bash
-# If you have CMake
 mkdir build && cd build
 cmake ..
 make
 ./atm_sim
-
-# OR plain g++
-g++ main.cpp Account.cpp utils.cpp -o atm_sim
-./atm_sim
-
 ```
 
-## 🛠️ Build Instructions
+### 🧪 Option 2: Using g++ Directly
+
+```bash
+g++ main.cpp Account.cpp utils.cpp -o atm_sim
+./atm_sim
+```
+
+---
+
+## 📂 Project Structure
+
+```
 ATM-Simulator/
-├── main.cpp
-├── Account.hpp / Account.cpp
-├── utils.hpp / utils.cpp
-├── AccountHistory/   # <- Your royal account data
+├── main.cpp                 # Entry point
+├── Account.hpp / Account.cpp  # Account class (withdraw, deposit, verify, etc.)
+├── utils.hpp / utils.cpp    # Utility functions (I/O, validation, etc.)
+├── AccountHistory/          # 📂 Account data stored here
+├── CMakeLists.txt           # For building via CMake
 ├── .gitignore
 └── README.md
+```
 
+---
 
-## Future Plans
-  File Handling (Save & Load Accounts)
- 🧍 Multiple Users Support
- 🔐 Limit Login Attempts
- 📊 Account Summary & Statements
- 🪙 Interest Feature
- 🌐 Internationalization (Currency + Language)
- ⚖️ Transfer Between Accounts
- 📅 Timestamps for Transactions
- 🧪 Unit Testing
- 🧬 Inheritance – Different Account Types
- 📱 Build GUI or Mobile Version
- ☠️ Admin Mode
- 🧾 Receipt Generation
- ⚔️ Error Handling Overhaul
- 🎮 Gamify Banking (because why not?)
+## 📈 Planned Upgrades (Future Goals)
+
+* 🢍 Multi-user support
+* 🔐 Limited login attempts
+* �� Interest calculation
+* ⚖️ Inter-account transfers
+* 📊 Account summary generation
+* 🧾 Receipt generation (TXT-based)
+* ☠️ Admin mode
+* 📅 Timestamped transactions
+* 🌐 Multi-language & currency support
+* 🧪 Unit testing
+* 🦮 Account inheritance (e.g. Savings, Checking)
+* 📱 GUI/Mobile version
+* 🎮 Gamification features (achievement system)
+
+---
+
+## 🤘 Contributing
+
+Want to help make the ultimate terminal banking simulator?
+Fork it, clone it, break it, fix it, commit it, push it.
+
+---
+
+## 📜 License
+
+MIT License. Steal it, tweak it, just don’t forget to star it ⭐
+
+---
+
+> “Bank like a boss. Code like a king.” 👑
